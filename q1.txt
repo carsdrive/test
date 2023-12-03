@@ -1,0 +1,35 @@
+#question1
+
+#a
+class device:
+    
+def __init__(self, name, manufacturer, price):
+        self.name = name
+        self.manufacturer = manufacturer
+        self.price = price
+
+    def display_details(self):
+        print(f"device: {self.name}, Manufacturer: {self.manufacturer}, Price: {self.price}")
+
+
+class laptop(device):
+    def laptop_details(self):def __init__(self, name, manufacturer, price):
+        self.name = name
+        self.manufacturer = manufacturer
+        self.price = price
+
+    def laptop_details(self):
+        print(f"device: {self.name}, Manufacturer: {self.manufacturer}, Price: {self.price}")
+        
+class mobile(device):
+    def __init__(self, name, manufacturer, price, storage, ram):
+        super().__init__(name, manufacturer, price)
+        self.storage = storage
+        self.ram = ram
+
+    def mobile_details(self):
+        print(f"Mobile Details - Storage: {self.storage}, RAM: {self.ram} GB")
+        
+
+
+
